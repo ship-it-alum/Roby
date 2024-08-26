@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - SOLANA_NETWORK=devnet
+      - SOLANA_RPC_URL=https://api.devnet.solana.com
+      - PROGRAM_ID=${PROGRAM_ID}
+      - LOG_LEVEL=info
+      - NODE_ENV=production
+    restart: unless-stopped
+    volumes:
+      - ./api/logs:/app/logs
+
+  localnet:
+    image: solanalabs/solana:v1.18.0
+    command: solana-test-validator --reset
+    ports:
+      - "8899:8899"
+      - "8900:8900"
+    healthcheck:
+      test: ["CMD", "solana", "cluster-version"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+
+
