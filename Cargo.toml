@@ -1,0 +1,20 @@
+[workspace]
+members = [
+    "program",
+]
+
+[workspace.package]
+version = "1.0.0"
+authors = ["ship-it-alum <excdotfun@gmail.com>"]
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/ship-it-alum/Roby"
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1
+opt-level = 3
+
+
+
