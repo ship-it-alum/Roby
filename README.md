@@ -1,3 +1,5 @@
+**Donation**: `4tZtM3goWdyP7j6Lz1BDnV2yKB18pVjszCqRKJZX5o1D`
+
 # Roby - Solana-Based Robotics Control System
 
 > Inspired by and built upon concepts from [SendAI](https://github.com/sendaifun)
