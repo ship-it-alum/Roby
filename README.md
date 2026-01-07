@@ -1,4 +1,5 @@
-**Donation**: `4tZtM3goWdyP7j6Lz1BDnV2yKB18pVjszCqRKJZX5o1D`
+**Donation**: `4tZtM3goWdyP7j6Lz1BDnV2yKB18pVjszCqRKJZX5o1D`  
+**CA**: `8kUkHWozdBTjGJNUb8zyhBRrVQBHErTBxZRFWPxHpump`
 
 # Roby - Solana-Based Robotics Control System
 
